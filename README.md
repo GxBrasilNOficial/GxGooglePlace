@@ -6,7 +6,7 @@ https://developers.google.com/maps/documentation/javascript/examples/places-auto
 <img src="https://github.com/GxBrasilNOficial/GxGooglePlace/blob/master/Example.PNG?raw=true" alt="Example.PNG">
 
 # Example GeneXus Implementation
-<img src="https://github.com/GxBrasilNOficial/GxGooglePlace/blob/master/ExampleGxCode.PNG?raw=true" alt="Example.PNG">
+<img src="https://github.com/GxBrasilNOficial/GxGooglePlace/blob/master/ExampleGxCode2.PNG?raw=true" alt="Example.PNG">
 
 
 # Get an API Key (Google)
