@@ -1,6 +1,9 @@
 # GxGooglePlace
 This control was implemented based on the Place Autocomplete Address Form
 
+# Example Interface
+<img src="https://github.com/GxBrasilNOficial/GxGooglePlace/blob/master/Example.PNG?raw=true" alt="Example.PNG">
+
 https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
 
 # Get an API Key
