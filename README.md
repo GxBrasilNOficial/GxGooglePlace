@@ -1,10 +1,13 @@
 # GxGooglePlace
 This control was implemented based on the Place Autocomplete Address Form
+https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
 
 # Example Interface
 <img src="https://github.com/GxBrasilNOficial/GxGooglePlace/blob/master/Example.PNG?raw=true" alt="Example.PNG">
 
-https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
+# Example GeneXus Implementation
+<img src="https://github.com/GxBrasilNOficial/GxGooglePlace/blob/master/ExampleGxCode.PNG?raw=true" alt="Example.PNG">
+
 
 # Get an API Key (Google)
 <aside class="note"><b>New Users: </b>
