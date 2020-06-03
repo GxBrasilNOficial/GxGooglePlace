@@ -87,7 +87,7 @@ if (navigator.geolocation) {
       </Part>
       <Properties><Property><Name>Name</Name><Value>ucGxPlaceGoogle</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
     </Object>
-    <Object parent="PlacesGoogle" parentType="00000000-0000-0000-0000-000000000008" parentGuid="c87cb2a5-35c2-4954-aa65-ccbe4b3edc76" user="MARIO\mario" versionDate="0001-01-01T00:00:00.0000000" lastUpdate="2020-06-03T15:32:06.0000000Z" checksum="ba17814b7c8008d8f3ee6f507aafa682" fullyQualifiedName="PlaceControlExample" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="6f7a1e79-5654-42d1-b751-90bccf4f40c2" name="PlaceControlExample" type="c9584656-94b6-4ccd-890f-332d11fc2c25" description="Place Control Example">
+    <Object parent="PlacesGoogle" parentType="00000000-0000-0000-0000-000000000008" parentGuid="c87cb2a5-35c2-4954-aa65-ccbe4b3edc76" user="MARIO\mario" versionDate="0001-01-01T00:00:00.0000000" lastUpdate="2020-06-03T17:08:25.0000000Z" checksum="12724ed594a71e4025171366e8fcd423" fullyQualifiedName="PlaceControlExample" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="6f7a1e79-5654-42d1-b751-90bccf4f40c2" name="PlaceControlExample" type="c9584656-94b6-4ccd-890f-332d11fc2c25" description="Place Control Example">
       <Part type="d24a58ad-57ba-41b7-9e6e-eaca3543c778">
         <Source><![CDATA[<GxMultiForm rootId="1" version="html:15.0.0;layout:16.0.0"><Form id="1" type="layout"><detail><layout><table controlName="MainTable" tableType="Responsive" responsiveSizes="[]"><row><cell><data attribute="&amp;EnderecoGoogle" /></cell></row><row><cell><data attribute="&amp;Json" /></cell></row><row><cell><ucw gxControlType="-8682046" PATTERN_ELEMENT_CUSTOM_PROPERTIES="&lt;Properties&gt;&lt;Property&gt;&lt;Name&gt;ControlName&lt;/Name&gt;&lt;Value&gt;ucGxPlaceGoogle1&lt;/Value&gt;&lt;/Property&gt;&lt;/Properties&gt;" /></cell></row></table></layout></detail></Form></GxMultiForm>]]></Source>
         <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
@@ -97,13 +97,14 @@ if (navigator.geolocation) {
       </Part>
       <Part type="c44bd5ff-f918-415b-98e6-aca44fed84fa">
         <Source><![CDATA[Event Start
-	ucGxPlaceGoogle1.AttachControlID = &EnderecoGoogle.InternalName
-	ucGxPlaceGoogle1.ApiKEY = 'AIzaSyBytzTiCx5Ta_L33grPSJn6RhUZT2Ilq80'
-	//ucGxPlaceGoogle1.GeoLocate()
+	ucGxPlaceGoogle1.AttachControlID = &EnderecoGoogle.InternalName     //Sua variável
+	ucGxPlaceGoogle1.ApiKEY = 'YOUR_API_KEY' //Sua API KEY Google Places
+	ucGxPlaceGoogle1.GeoLocate() //Filtra os endereços, de acordo com sua localização
 Endevent
  
 
 Event ucGxPlaceGoogle1.Confirmed
+	//Endereço Selecionado, é retornado um Json
 	&Json = ucGxPlaceGoogle1.Json	
 EndEvent
 ]]></Source>
