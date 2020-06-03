@@ -9,19 +9,20 @@
     <Version guid="5560f3f2-fec8-459c-a7f6-3867b83da0c2" name="MeuRestauranteBackoffice" />
   </Source>
   <Objects>
-    <Object parent="PlacesGoogle" parentType="00000000-0000-0000-0000-000000000008" parentGuid="c87cb2a5-35c2-4954-aa65-ccbe4b3edc76" user="MARIO\mario" versionDate="0001-01-01T00:00:00.0000000" lastUpdate="2020-06-03T15:47:19.0000000Z" checksum="86745261cda6defb05bec21452ccafb2" fullyQualifiedName="ucGxPlaceGoogle" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="30d4c0ad-3daf-4587-8b79-f2a5047ec8e8" name="ucGxPlaceGoogle" type="562f4793-aabe-449f-8821-fc77e550698e" description="uc Gx Place Google">
+    <Object parent="PlacesGoogle" parentType="00000000-0000-0000-0000-000000000008" parentGuid="c87cb2a5-35c2-4954-aa65-ccbe4b3edc76" user="MARIO\mario" versionDate="0001-01-01T00:00:00.0000000" lastUpdate="2020-06-03T18:18:06.0000000Z" checksum="67d122b9c5252ac68fb43db7b1a768ee" fullyQualifiedName="ucGxPlaceGoogle" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="30d4c0ad-3daf-4587-8b79-f2a5047ec8e8" name="ucGxPlaceGoogle" type="562f4793-aabe-449f-8821-fc77e550698e" description="uc Gx Place Google">
       <Part type="3dd92fe7-b095-44d3-9fa0-8488fa3f0c67">
         <Source><![CDATA[<script src="https://maps.googleapis.com/maps/api/js?key={{ApiKEY}}&libraries=places&callback=initAutocomplete"
         async defer></script>
 		
 <script>
-  var mythis="";
-var placeSearch, autocomplete;
+  var myplace="";
+  var placeSearch, autocomplete;
+  
   function initAutocomplete() {
 	  // Create the autocomplete object, restricting the search predictions to
 	  // geographical location types.
 	  autocomplete = new google.maps.places.Autocomplete(
-      document.getElementById(mythis.AttachControlID), {types: ['geocode']});
+      document.getElementById('{{AttachControlID}}'), {types: ['geocode']});
 	
 	  // Avoid paying for data that you don't need by restricting the set of
 	  // place fields that are returned to just the address components.
@@ -36,9 +37,9 @@ function fillInAddress() {
   // Get the place details from the autocomplete object.
   var place = autocomplete.getPlace();	
 	
-  mythis.Json = JSON.stringify(place);
+  myplace.Json = JSON.stringify(place);
   //Executa o evento, avisando a interface que um endereço foi selecionado
-  mythis.Confirmed();
+  myplace.Confirmed();
 }
 
 </script>		]]></Source>
@@ -52,11 +53,11 @@ function fillInAddress() {
 <Property Name="ApiKEY" Type="string" Default=""/>
 
 <Script Name="After" When="AfterShow"> 
-  mythis.GeoLocate();
+  //myplace.GeoLocate();
 </Script>
 
 <Script Name="Load" When="BeforeShow">  
-  mythis = this;
+  myplace = this;
 </Script>
 
 <script Name="GeoLocate">
@@ -82,18 +83,18 @@ if (navigator.geolocation) {
         <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
       </Part>
       <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
-        <InnerHtml><![CDATA[]]></InnerHtml>
-        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+        <Properties />
       </Part>
       <Properties><Property><Name>Name</Name><Value>ucGxPlaceGoogle</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
     </Object>
-    <Object parent="PlacesGoogle" parentType="00000000-0000-0000-0000-000000000008" parentGuid="c87cb2a5-35c2-4954-aa65-ccbe4b3edc76" user="MARIO\mario" versionDate="0001-01-01T00:00:00.0000000" lastUpdate="2020-06-03T17:08:25.0000000Z" checksum="12724ed594a71e4025171366e8fcd423" fullyQualifiedName="PlaceControlExample" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="6f7a1e79-5654-42d1-b751-90bccf4f40c2" name="PlaceControlExample" type="c9584656-94b6-4ccd-890f-332d11fc2c25" description="Place Control Example">
+    <Object parent="PlacesGoogle" parentType="00000000-0000-0000-0000-000000000008" parentGuid="c87cb2a5-35c2-4954-aa65-ccbe4b3edc76" user="MARIO\mario" versionDate="0001-01-01T00:00:00.0000000" lastUpdate="2020-06-03T17:24:03.0000000Z" checksum="43f4fadbb3587f4cff00ba3f651a3297" fullyQualifiedName="PlaceControlExample" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="6f7a1e79-5654-42d1-b751-90bccf4f40c2" name="PlaceControlExample" type="c9584656-94b6-4ccd-890f-332d11fc2c25" description="Place Control Example">
       <Part type="d24a58ad-57ba-41b7-9e6e-eaca3543c778">
         <Source><![CDATA[<GxMultiForm rootId="1" version="html:15.0.0;layout:16.0.0"><Form id="1" type="layout"><detail><layout><table controlName="MainTable" tableType="Responsive" responsiveSizes="[]"><row><cell><data attribute="&amp;EnderecoGoogle" /></cell></row><row><cell><data attribute="&amp;Json" /></cell></row><row><cell><ucw gxControlType="-8682046" PATTERN_ELEMENT_CUSTOM_PROPERTIES="&lt;Properties&gt;&lt;Property&gt;&lt;Name&gt;ControlName&lt;/Name&gt;&lt;Value&gt;ucGxPlaceGoogle1&lt;/Value&gt;&lt;/Property&gt;&lt;/Properties&gt;" /></cell></row></table></layout></detail></Form></GxMultiForm>]]></Source>
         <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
       </Part>
       <Part type="9b0a32a3-de6d-4be1-a4dd-1b85d3741534">
-        <Properties />
+        <Source><![CDATA[]]></Source>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
       </Part>
       <Part type="c44bd5ff-f918-415b-98e6-aca44fed84fa">
         <Source><![CDATA[Event Start
@@ -111,7 +112,8 @@ EndEvent
         <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
       </Part>
       <Part type="763f0d8b-d8ac-4db4-8dd4-de8979f2b5b9">
-        <Properties />
+        <Source><![CDATA[]]></Source>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
       </Part>
       <Part type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
         <Variable Name="EnderecoGoogle">
