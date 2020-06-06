@@ -5,64 +5,11 @@
     <MinorVersion>0</MinorVersion>
     <Build>140712</Build>
   </KMW>
-  <Source kb="a883b864-cec7-422c-9080-ef48824946e6" username="DESKTOP-1PP854A\Felipe Neves" UNCPath="\\DESKTOP-1PP854A\D$\Dev\Projetos\Pessoal\mariokanban">
-    <Version guid="95242e9b-aa39-4931-b6b4-4a1bd7c16f6e" name="mariokanban" />
+  <Source kb="c44767b6-13ef-49f5-8f32-1d4cd33d7f06" username="MARIO\mario" UNCPath="\\MARIO\C$\KBase\MeuRestauranteBackoffice">
+    <Version guid="5560f3f2-fec8-459c-a7f6-3867b83da0c2" name="MeuRestauranteBackoffice" />
   </Source>
   <Objects>
-    <Object parent="PlacesGoogle" parentType="00000000-0000-0000-0000-000000000008" parentGuid="c87cb2a5-35c2-4954-aa65-ccbe4b3edc76" user="DESKTOP-1PP854A\Felipe Neves" versionDate="0001-01-01T00:00:00.0000000" lastUpdate="2020-06-06T02:13:53.0000000Z" checksum="56b6df8687d9d7e00ea5bd0b50882fd3" fullyQualifiedName="PlaceControlExample" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="6f7a1e79-5654-42d1-b751-90bccf4f40c2" name="PlaceControlExample" type="c9584656-94b6-4ccd-890f-332d11fc2c25" description="Place Control Example">
-      <Part type="d24a58ad-57ba-41b7-9e6e-eaca3543c778">
-        <Source><![CDATA[<GxMultiForm rootId="1" version="html:15.0.0;layout:16.0.0"><Form id="1" type="layout"><detail><layout><table controlName="MainTable" tableType="Responsive" responsiveSizes="[]"><row><cell><data attribute="&amp;EnderecoGoogle" /></cell></row><row><cell><data attribute="&amp;Json" /></cell></row><row><cell><ucw gxControlType="-8682046" PATTERN_ELEMENT_CUSTOM_PROPERTIES="&lt;Properties&gt;&lt;Property&gt;&lt;Name&gt;ControlName&lt;/Name&gt;&lt;Value&gt;ucGxPlaceGoogle1&lt;/Value&gt;&lt;/Property&gt;&lt;/Properties&gt;" /></cell></row></table></layout></detail></Form></GxMultiForm>]]></Source>
-        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
-      </Part>
-      <Part type="9b0a32a3-de6d-4be1-a4dd-1b85d3741534">
-        <Source><![CDATA[]]></Source>
-        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
-      </Part>
-      <Part type="c44bd5ff-f918-415b-98e6-aca44fed84fa">
-        <Source><![CDATA[Event Start
-	ucGxPlaceGoogle1.AttachControlID = &EnderecoGoogle.InternalName     //Sua variável
-	ucGxPlaceGoogle1.ApiKEY = '' //Sua API KEY Google Places
-	ucGxPlaceGoogle1.GeoLocate() //Filtra os endereços, de acordo com sua localização
-Endevent
- 
-
-Event ucGxPlaceGoogle1.Confirmed
-	//Endereço Selecionado, é retornado um Json
-	&Json = ucGxPlaceGoogle1.Json	
-EndEvent
-]]></Source>
-        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
-      </Part>
-      <Part type="763f0d8b-d8ac-4db4-8dd4-de8979f2b5b9">
-        <Source><![CDATA[]]></Source>
-        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
-      </Part>
-      <Part type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
-        <Variable Name="EnderecoGoogle">
-          <Documentation />
-          <Properties><Property><Name>Name</Name><Value>EnderecoGoogle</Value></Property><Property><Name>EmptyAsNull</Name><Value>Yes</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:VarChar</Value></Property><Property><Name>Length</Name><Value>60</Value></Property><Property><Name>Decimals</Name><Value>0</Value></Property><Property><Name>AttMaxLen</Name><Value>60</Value></Property><Property><Name>AttAvgLen</Name><Value>0</Value></Property><Property><Name>AttCollection</Name><Value>False</Value></Property><Property><Name>AUTONUMBER</Name><Value>False</Value></Property><Property><Name>AUTONUMBER_START</Name><Value>1</Value></Property><Property><Name>AUTONUMBER_STEP</Name><Value>1</Value></Property><Property><Name>AUTONUMBER_FORREPLICATION</Name><Value>True</Value></Property><Property><Name>idDATEFORMAT</Name><Value>idDATEFORMAT_SHORT</Value></Property><Property><Name>ControlType</Name><Value>Edit</Value></Property></Properties>
-        </Variable>
-        <Variable Name="Json">
-          <Documentation />
-          <Properties><Property><Name>Name</Name><Value>Json</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:LongVarChar</Value></Property></Properties>
-        </Variable>
-        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
-      </Part>
-      <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
-        <Help>
-          <HelpItem>
-            <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Portuguese</Language>
-            <Content />
-          </HelpItem>
-        </Help>
-        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
-      </Part>
-      <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
-        <Properties />
-      </Part>
-      <Properties><Property><Name>Name</Name><Value>PlaceControlExample</Value></Property><Property><Name>IsMain</Name><Value>True</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
-    </Object>
-    <Object parent="PlacesGoogle" parentType="00000000-0000-0000-0000-000000000008" parentGuid="c87cb2a5-35c2-4954-aa65-ccbe4b3edc76" user="DESKTOP-1PP854A\Felipe Neves" versionDate="0001-01-01T00:00:00.0000000" lastUpdate="2020-06-06T02:13:44.0000000Z" checksum="86cd5b1da9afd3b970d7f5aa397e567b" fullyQualifiedName="ucGxPlaceGoogle" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="30d4c0ad-3daf-4587-8b79-f2a5047ec8e8" name="ucGxPlaceGoogle" type="562f4793-aabe-449f-8821-fc77e550698e" description="uc Gx Place Google">
+    <Object parent="PlacesGoogle" parentType="00000000-0000-0000-0000-000000000008" parentGuid="c87cb2a5-35c2-4954-aa65-ccbe4b3edc76" user="MARIO\mario" versionDate="2020-06-06T16:01:09.0000000Z" lastUpdate="2020-06-06T14:03:50.0000000Z" checksum="7dc1e1fcc982b90d87569735c02aae43" fullyQualifiedName="ucGxPlaceGoogle" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="30d4c0ad-3daf-4587-8b79-f2a5047ec8e8" name="ucGxPlaceGoogle" type="562f4793-aabe-449f-8821-fc77e550698e" description="uc Gx Place Google">
       <Part type="3dd92fe7-b095-44d3-9fa0-8488fa3f0c67">
         <Source><![CDATA[]]></Source>
         <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
@@ -132,7 +79,7 @@ EndEvent
 				};
 				if (google){
 					var circle = new google.maps.Circle({center: geolocation, radius: position.coords.accuracy});
-					autocomplete.setBounds(circle.getBounds());
+					myplace.autocomplete.setBounds(circle.getBounds());
 				}
 			});
 		}
@@ -147,8 +94,101 @@ EndEvent
       </Part>
       <Properties><Property><Name>Name</Name><Value>ucGxPlaceGoogle</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
     </Object>
+    <Object parent="PlacesGoogle" parentType="00000000-0000-0000-0000-000000000008" parentGuid="c87cb2a5-35c2-4954-aa65-ccbe4b3edc76" user="DESKTOP-1PP854A\Felipe Neves" versionDate="2020-06-06T16:01:09.0000000Z" lastUpdate="2020-06-06T02:13:53.0000000Z" checksum="85a23a57e056ff02223023de37299837" fullyQualifiedName="PlaceControlExample" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="6f7a1e79-5654-42d1-b751-90bccf4f40c2" name="PlaceControlExample" type="c9584656-94b6-4ccd-890f-332d11fc2c25" description="Place Control Example">
+      <Part type="d24a58ad-57ba-41b7-9e6e-eaca3543c778">
+        <Source><![CDATA[<GxMultiForm rootId="1" version="html:15.0.0;layout:16.0.0"><Form id="1" type="layout"><detail><layout><table controlName="MainTable" tableType="Responsive" responsiveSizes="[]"><row><cell><data attribute="&amp;EnderecoGoogle" /></cell></row><row><cell><data attribute="&amp;Json" /></cell></row><row><cell><ucw gxControlType="-8682046" PATTERN_ELEMENT_CUSTOM_PROPERTIES="&lt;Properties&gt;&lt;Property&gt;&lt;Name&gt;ControlName&lt;/Name&gt;&lt;Value&gt;ucGxPlaceGoogle1&lt;/Value&gt;&lt;/Property&gt;&lt;/Properties&gt;" /></cell></row></table></layout></detail></Form></GxMultiForm>]]></Source>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="9b0a32a3-de6d-4be1-a4dd-1b85d3741534">
+        <Source><![CDATA[]]></Source>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="c44bd5ff-f918-415b-98e6-aca44fed84fa">
+        <Source><![CDATA[Event Start
+	ucGxPlaceGoogle1.AttachControlID = &EnderecoGoogle.InternalName     //Sua variável
+	ucGxPlaceGoogle1.ApiKEY = '' //Sua API KEY Google Places
+	ucGxPlaceGoogle1.GeoLocate() //Filtra os endereços, de acordo com sua localização
+Endevent
+ 
+
+Event ucGxPlaceGoogle1.Confirmed
+	//Endereço Selecionado, é retornado um Json
+	&Json = ucGxPlaceGoogle1.Json	
+EndEvent
+]]></Source>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="763f0d8b-d8ac-4db4-8dd4-de8979f2b5b9">
+        <Source><![CDATA[]]></Source>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+        <Variable Name="EnderecoGoogle">
+          <Documentation />
+          <Properties><Property><Name>Name</Name><Value>EnderecoGoogle</Value></Property><Property><Name>EmptyAsNull</Name><Value>Yes</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:VarChar</Value></Property><Property><Name>Length</Name><Value>60</Value></Property><Property><Name>Decimals</Name><Value>0</Value></Property><Property><Name>AttMaxLen</Name><Value>60</Value></Property><Property><Name>AttAvgLen</Name><Value>0</Value></Property><Property><Name>AttCollection</Name><Value>False</Value></Property><Property><Name>AUTONUMBER</Name><Value>False</Value></Property><Property><Name>AUTONUMBER_START</Name><Value>1</Value></Property><Property><Name>AUTONUMBER_STEP</Name><Value>1</Value></Property><Property><Name>AUTONUMBER_FORREPLICATION</Name><Value>True</Value></Property><Property><Name>idDATEFORMAT</Name><Value>idDATEFORMAT_SHORT</Value></Property><Property><Name>ControlType</Name><Value>Edit</Value></Property></Properties>
+        </Variable>
+        <Variable Name="Json">
+          <Documentation />
+          <Properties><Property><Name>Name</Name><Value>Json</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:LongVarChar</Value></Property></Properties>
+        </Variable>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+        <Help>
+          <HelpItem>
+            <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-Portuguese</Language>
+            <Content />
+          </HelpItem>
+        </Help>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+        <Properties />
+      </Part>
+      <Properties><Property><Name>Name</Name><Value>PlaceControlExample</Value></Property><Property><Name>IsMain</Name><Value>True</Value></Property><Property><Name>IntegratedSecurityPermissionPrefix</Name><Value>PlaceControlExample</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Object>
+    <Object parent="PlacesGoogle" parentType="00000000-0000-0000-0000-000000000008" parentGuid="c87cb2a5-35c2-4954-aa65-ccbe4b3edc76" user="MARIO\mario" versionDate="2020-06-04T01:15:15.0000000Z" lastUpdate="2020-06-03T20:40:29.0000000Z" checksum="95d9c4eac08bb5a8e6b23b4d360145ac" fullyQualifiedName="SdtPlacesGoogle" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="2d1ec422-9b84-4ee0-bf9e-d91714c0ac1f" name="SdtPlacesGoogle" type="447527b5-9210-4523-898b-5dccb17be60a" description="">
+      <Part type="5c2aa9da-8fc4-4b6b-ae02-8db4fa48976a">
+        <Level Name="SdtPlacesGoogle">
+          <LevelInfo guid="ce84616a-ccad-44d2-b37d-7b7a74d1d693" name="SdtPlacesGoogle" type="a76e9340-bdb9-445d-8f81-cfd4ddd0b0f3" description="Sdt Places Google" user="MARIO\mario">
+            <Properties><Property><Name>Name</Name><Value>SdtPlacesGoogle</Value></Property></Properties>
+          </LevelInfo>
+          <Level Name="address_components">
+            <LevelInfo guid="493275a1-c86c-4bef-8280-989d2b4164e7" name="address_components" type="a76e9340-bdb9-445d-8f81-cfd4ddd0b0f3" description="address_components" user="MARIO\mario">
+              <Properties><Property><Name>Name</Name><Value>address_components</Value></Property><Property><Name>AttCollection</Name><Value>True</Value></Property></Properties>
+            </LevelInfo>
+            <Item guid="da1db9a5-30ed-485e-a95c-766bde9aaf02" name="long_name" type="f76e9340-bdb9-445d-8f81-cfd4ddd0b0f3" description="long_name" user="MARIO\mario">
+              <Properties><Property><Name>Name</Name><Value>long_name</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:VarChar</Value></Property><Property><Name>Length</Name><Value>100</Value></Property><Property><Name>Decimals</Name><Value>0</Value></Property><Property><Name>AttMaxLen</Name><Value>100</Value></Property><Property><Name>AttAvgLen</Name><Value>0</Value></Property><Property><Name>AttCollection</Name><Value>False</Value></Property></Properties>
+            </Item>
+            <Item guid="994aba14-8a92-49f0-a8e9-21737508e1c9" name="short_name" type="f76e9340-bdb9-445d-8f81-cfd4ddd0b0f3" description="short_name" user="MARIO\mario">
+              <Properties><Property><Name>Name</Name><Value>short_name</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:VarChar</Value></Property><Property><Name>Length</Name><Value>100</Value></Property><Property><Name>Decimals</Name><Value>0</Value></Property><Property><Name>AttMaxLen</Name><Value>100</Value></Property><Property><Name>AttAvgLen</Name><Value>0</Value></Property><Property><Name>AttCollection</Name><Value>False</Value></Property></Properties>
+            </Item>
+            <Item guid="ac9564c5-e61b-49f1-b020-4b7be9e9275d" name="types" type="f76e9340-bdb9-445d-8f81-cfd4ddd0b0f3" description="types" user="MARIO\mario">
+              <Properties><Property><Name>Name</Name><Value>types</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:VarChar</Value></Property><Property><Name>Length</Name><Value>100</Value></Property><Property><Name>Decimals</Name><Value>0</Value></Property><Property><Name>AttMaxLen</Name><Value>100</Value></Property><Property><Name>AttAvgLen</Name><Value>0</Value></Property><Property><Name>AttCollection</Name><Value>True</Value></Property></Properties>
+            </Item>
+          </Level>
+        </Level>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+        <Properties />
+      </Part>
+      <Properties><Property><Name>Name</Name><Value>SdtPlacesGoogle</Value></Property><Property><Name>Description</Name><Value /></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Object>
   </Objects>
   <Dependencies>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Object" Id="562f4793-aabe-449f-8821-fc77e550698e">
+      <Properties Name="User Control" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="3dd92fe7-b095-44d3-9fa0-8488fa3f0c67">
+      <Properties Name="Screen Template" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="8e9e4a7c-a4d3-4c36-8e8e-fb6702402f63">
+      <Properties Name="Properties" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="babf62c5-0111-49e9-a1c3-cc004d90900a">
+      <Properties Name="Documentation" PackageName="GenexusBL" />
+    </Reference>
     <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Object" Id="c9584656-94b6-4ccd-890f-332d11fc2c25">
       <Properties Name="Web Panel" PackageName="GenexusBL" />
     </Reference>
@@ -170,17 +210,11 @@ EndEvent
     <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="ad3ca970-19d0-44e1-a7b7-db05556e820c">
       <Properties Name="Help" PackageName="GenexusBL" />
     </Reference>
-    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="babf62c5-0111-49e9-a1c3-cc004d90900a">
-      <Properties Name="Documentation" PackageName="GenexusBL" />
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Object" Id="447527b5-9210-4523-898b-5dccb17be60a">
+      <Properties Name="Structured Data Type" PackageName="GenexusBL" />
     </Reference>
-    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Object" Id="562f4793-aabe-449f-8821-fc77e550698e">
-      <Properties Name="User Control" PackageName="GenexusBL" />
-    </Reference>
-    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="3dd92fe7-b095-44d3-9fa0-8488fa3f0c67">
-      <Properties Name="Screen Template" PackageName="GenexusBL" />
-    </Reference>
-    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="8e9e4a7c-a4d3-4c36-8e8e-fb6702402f63">
-      <Properties Name="Properties" PackageName="GenexusBL" />
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="5c2aa9da-8fc4-4b6b-ae02-8db4fa48976a">
+      <Properties Name="Structure" PackageName="GenexusBL" />
     </Reference>
   </Dependencies>
   <ObjectsIdentityMapping>
@@ -197,7 +231,7 @@ EndEvent
       <Guid>f952860a-9553-4095-82c8-dedaadd8cf64</Guid>
     </ObjectIdentity>
     <ObjectIdentity Type="ecececec-dfe0-4a57-ae8f-c6e31b0dcbc0" Name="Default" parent="">
-      <Guid>b913335a-52c8-4ec0-9378-276fdce30f58</Guid>
+      <Guid>0d384266-b2ff-4572-af75-b208281cbf88</Guid>
     </ObjectIdentity>
     <ObjectIdentity Type="d4876646-98dd-419b-8c1c-896f83c48368" Name="Form" parent="">
       <Guid>d5ef9926-a55b-5eb1-ac93-2211cfeeb656</Guid>
